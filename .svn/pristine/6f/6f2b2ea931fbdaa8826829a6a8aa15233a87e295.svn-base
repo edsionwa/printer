@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "ghfeng"]
+	url = http://172.16.1.212/erp.git
+	fetch = +refs/heads/*:refs/remotes/ghfeng/*
+[gui]
+	wmstate = zoomed
+	geometry = 841x483+175+175 695 218

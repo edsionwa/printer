@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PendingCommit>
+  <CommitComment />
+  <TrackedFiles>
+    <RelativePath>POSdllDemo\app.config</RelativePath>
+    <RelativePath>POSdllDemo\FormMain.cs</RelativePath>
+    <RelativePath>POSdllDemo\FormMain.Designer.cs</RelativePath>
+    <RelativePath>POSdllDemo\GprinterDEMO_TemporaryKey.pfx</RelativePath>
+    <RelativePath>POSdllDemo\packages.config</RelativePath>
+  </TrackedFiles>
+  <ExcludedItems />
+  <WorkItems />
+</PendingCommit>
