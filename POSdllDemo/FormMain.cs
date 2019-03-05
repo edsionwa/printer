@@ -232,7 +232,7 @@ namespace POSdllDemo
           for (int i=0;i<t;i++){
               temp=temp+"设备"+(i+1).ToString()+"秘钥="+GetHardwarePassword(i+1) + "\r\n" ;
           }
-          temp=temp+"本程序主要服务于标签打印机，目前免费开放接口使用。具体联系杭州映墨科技有限公司0571-28285226";
+          temp = temp + "本程序主要服务于标签和小票打印机，目前免费开放接口使用。\n具体联系杭州映墨科技有限公司0571-28285226";
           MessageBox.Show( temp);
       }
 
@@ -278,12 +278,12 @@ namespace POSdllDemo
 
 
       /// <summary>
-      /// 设备号
+      /// 获得设备号
       /// </summary>
       /// <returns></returns>
       public static string GetHardwareID()
       {
-          string MACString = GetMACString();
+          string MACString = GetMACString();//获得mac地址
           string SizeOfDisk = GetSizeOfDisk();
           string SizeOfMemery = GetSizeOfMemery();
           string CpuID = GetCpuID();
@@ -292,8 +292,8 @@ namespace POSdllDemo
           string md5s = EncryptWithMD5(MACString + SizeOfDisk + SizeOfMemery + CpuID + DiskID +MD5_ATTACH);
           string  sbid=uint32String(md5s);
 
-          md5s = EncryptWithMD5(MD5_ATTACH+sbid);
-          string sbmy = uint32String(md5s);
+          //md5s = EncryptWithMD5(MD5_ATTACH+sbid);
+          //string sbmy = uint32String(md5s);
           return sbid;
       }
 
